@@ -1,3 +1,11 @@
-<h1>体感寿命の結果</h1>
-<p>あなたはあと <%= @remaining_years %> 年生きると予想しています。</p>
+<h1>寿命</h1>
+<p>あと <%= @lifespan %> 年</p>
+<h1>人生の経過率</h1>
+<p><%= @lifespan_progress_rate %> %</p>
 
+<h1>体感寿命</h1>
+<p>あと <%= @perceived_lifespan %> 年</p>
+<h1>※あなたの現在の体感時間を元に算出</h1>
+
+<h1>人生の体感経過率</h1>
+<p><%= @perceived_lifespan_progress_rate %> %</p>

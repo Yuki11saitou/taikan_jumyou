@@ -14,7 +14,7 @@
       </div>
       <div class="mb-4">
         <label for="expected_age" class="block text-lg">何歳まで生きると思いますか？</label>
-        <%= form.select :expected_age, options_for_select((1..120).to_a), { prompt: "予想寿命を選択" }, class: "form-select" %>
+        <%= form.select :final_age, options_for_select((1..120).to_a), { prompt: "予想寿命を選択" }, class: "form-select" %>
       </div>
       <div class="mb-4">
         <%= form.submit "計測する", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
