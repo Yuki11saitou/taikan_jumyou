@@ -1,10 +1,11 @@
 class ResultsController < ApplicationController
   def result
+    # パラメータがない場合やゼロの場合はトップページにリダイレクト
     if params[:current_age].nil? || params[:final_age].nil? || params[:current_age].to_i.zero? || params[:final_age].to_i.zero?
-      # パラメータがない場合はトップページにリダイレクトします
       redirect_to root_path
       return
     end
+
     current_age = params[:current_age].to_i
     final_age = params[:final_age].to_i
     # 計算ロジックをここに追加します
