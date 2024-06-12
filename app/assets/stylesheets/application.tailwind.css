@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.twitter a {
+    color: #00acee;
+  }
+  
+  .twitter a:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+  }
