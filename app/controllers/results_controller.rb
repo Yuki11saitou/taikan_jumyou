@@ -13,14 +13,15 @@ class ResultsController < ApplicationController
       return
     end
 
-    # 計算ロジックをここに追加します
+    # 寿命
     @lifespan = (final_age - current_age).round(1)
-    # @lifespan_progress_rate = (current_age/final_age) * 100
+    # 人生の経過率
+    @lifespan_progress_rate = ((current_age/final_age) * 100).round(1)
 
-    @perceived_lifespan = (current_age * (Math.log10(final_age / current_age))).round(1)
-    # @perceived_lifespan_progress_rate = ( current_age / final_age ) * 100
+    # 体感寿命
+    @perceived_lifespan = (current_age * (Math.log(final_age/current_age))).round(1)
+    # 体感人生の経過率
+    @perceived_lifespan_progress_rate = ((Math.log(current_age)/Math.log(final_age)) * 100).round(1)
 
-    # 結果を表示するビューをレンダリングします
-    # render "result"
   end
 end
