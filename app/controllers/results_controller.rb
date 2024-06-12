@@ -3,12 +3,12 @@ class ResultsController < ApplicationController
     current_age = params[:current_age].to_i.to_f
     final_age = params[:final_age].to_i.to_f
 
-    # パラメータがゼロ、未入力の場合はトップページにリダイレクト
-    if current_age.zero? || final_age.zero? || current_age.nil? || final_age.nil?
-      redirect_to root_path, alert: "予期せぬ値が入力されました"
+    if current_age.nil? || final_age.nil? || current_age.zero? || final_age.zero?
+      # パラメータが未入力、ゼロの場合はトップページにリダイレクト
+      redirect_to root_path, alert: "年齢を入力してください"
       return
-    # 現在の年齢が最後の年齢よりも大きい場合はトップページにリダイレクト
     elsif current_age > final_age
+      # 現在の年齢が最後の年齢よりも大きい場合はトップページにリダイレクト
       redirect_to root_path, notice: "現在の年齢が最後の年齢よりも大きいです"
       return
     end
