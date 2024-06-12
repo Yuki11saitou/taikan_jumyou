@@ -22,6 +22,5 @@ class ResultsController < ApplicationController
     @perceived_lifespan = (current_age * (Math.log(final_age/current_age))).round(1)
     # 体感人生の経過率
     @perceived_lifespan_progress_rate = ((Math.log(current_age)/Math.log(final_age)) * 100).round(1)
-
   end
 end
