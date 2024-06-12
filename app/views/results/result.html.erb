@@ -13,6 +13,7 @@
 <div class="twitter">
    <%= link_to "https://twitter.com/intent/tweet?url=#{request.base_url}&text=#{ERB::Util.url_encode("【体感寿命、測ります】\n\nあなたの体感寿命は残り「#{@perceived_lifespan}年」\n人生の体感経過率は「#{@perceived_lifespan_progress_rate}%」です\n\n\n#体感寿命測ります\n\nサイトはこちら\n")}", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
     <i class="fab fa-twitter"></i>Xでシェアする
+    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
    <% end %>
 </div>
 
