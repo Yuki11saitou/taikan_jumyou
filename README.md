@@ -1,11 +1,11 @@
 # README
 
-[作成記録notion]()
+[作成記録notion](https://impartial-trunk-0da.notion.site/ea217c40a9014d78843a933712fdb4d7?pvs=4)
 
 
 ## サービス概要
 
-### サービス名 体感寿命、測ります
+### サービス名 : 体感寿命、測ります
 
 サービスURL： https://taikan-jumyou.onrender.com/
 
