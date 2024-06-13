@@ -1,13 +1,3 @@
-// module.exports = {
-//   content: [
-//     './app/views/**/*.html.erb',
-//     './app/helpers/**/*.rb',
-//     './app/assets/stylesheets/**/*.css',
-//     './app/javascript/**/*.js'
-//   ]
-// }
-
-// もちさんのファイル参考
 const { default: daisyui } = require("daisyui");
 
 module.exports = {
@@ -26,6 +16,6 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "pastel"],
+    themes: ["light", "dark", "luxury"],
   },
 }
