@@ -17,7 +17,7 @@ module.exports = {
           // 画像、テキストのアニメーション追加
           animation: {
               "bounce-in-top": "bounce-in-top 1.1s ease   both",
-              "fade-in-fwd": "fade-in-fwd 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both"
+              "fade-in-fwd": "fade-in-fwd 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both"
           },
           keyframes: {
               "bounce-in-top": {
