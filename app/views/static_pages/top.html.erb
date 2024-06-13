@@ -6,7 +6,7 @@
 
     </div>
     <%# lg,xl 3,15 %>
-    <div class="text-base sm:text-sm text-center mb-10 sm:mb-15 mt-6">
+    <div class="text-base sm:text-sm text-center mb-10 sm:mb-20 mt-6">
         このアプリは忙しいあたなに<br>
         「1日1日を大切に過ごして欲しい」<br>
         という思いのもと作成しました。<br><br>
@@ -15,15 +15,19 @@
         あなたの体感寿命、測ります。<br>
     </div>
     <%= form_with url: result_path, method: :post, local: true do |form| %>
-      <div class="mb-4">
-        <label for="current_age" class="block text-lg">あなたの年齢を入力してください</label>
+      <div class="mb-10">
+        <label for="current_age" class="block text-lg">あなたの年齢を入力してください。</label>
         <%= form.select :current_age, options_for_select((1..100).to_a), { prompt: "年齢を選択" }, class: "form-select" %>
       </div>
-      <div class="mb-4">
+      <div class="mb-10">
         <label for="expected_age" class="block text-lg">何歳まで生きると思いますか？</label>
         <%= form.select :final_age, options_for_select((1..120).to_a), { prompt: "予想寿命を選択" }, class: "form-select" %>
+        <div class="text-base sm:text-sm text-center mb-10 sm:mb-20 mt-6">
+          日本での平均寿命は 男性:81歳、女性:87歳です。<br>
+          引用元:2023年度厚生労働省調査
+        </div>
       </div>
-      <div class="mb-4">
+      <div class="mb-10">
         <%= form.submit "計測する", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
       </div>
     <% end %>
