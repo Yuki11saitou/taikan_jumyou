@@ -1,14 +1,9 @@
-<h1>寿命</h1>
-<p>あと <%= @lifespan %> 年</p>
-<h1>人生の経過率</h1>
-<p><%= @lifespan_progress_rate %> %</p>
-
-<h1>体感寿命</h1>
-<p>あと <%= @perceived_lifespan %> 年</p>
+<div>　　寿命：あと <%= @lifespan %> 年</div>
+<div class="animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
 <h1>※あなたの現在の体感時間を元に算出</h1>
 
-<h1>人生の体感経過率</h1>
-<p><%= @perceived_lifespan_progress_rate %> %</p>
+<div>人生の　　経過率：<%= @lifespan_progress_rate %> %</div>
+<div class="animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
 
 <div class="twitter">
    <%= link_to "https://twitter.com/intent/tweet?url=#{request.base_url}&text=#{ERB::Util.url_encode("【体感寿命、測ります】\n\nあなたの体感寿命は残り「#{@perceived_lifespan}年」\n人生の体感経過率は「#{@perceived_lifespan_progress_rate}%」です\n\n\n#体感寿命測ります\n\nサイトはこちら\n")}", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>

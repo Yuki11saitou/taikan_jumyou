@@ -7,13 +7,6 @@ module.exports = {
     './app/assets/stylesheets/**/*.css',
     './app/javascript/**/*.js'
   ],
-  theme: {
-    extend: {},
-      fontFamily: {
-        'body-jp': ['Kiwi Maru', 'serif'],
-        'body-en': ['Shrikhand', 'serif']
-      },
-  },
 
   theme: {
       extend: {
@@ -21,9 +14,10 @@ module.exports = {
             'body-jp': ['Kiwi Maru', 'serif'],
             'body-en': ['Shrikhand', 'serif']
           },
-          // 画像のアニメーション追加
+          // 画像、テキストのアニメーション追加
           animation: {
-              "bounce-in-top": "bounce-in-top 1.1s ease   both"
+              "bounce-in-top": "bounce-in-top 1.1s ease   both",
+              "fade-in-fwd": "fade-in-fwd 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both"
           },
           keyframes: {
               "bounce-in-top": {
@@ -52,13 +46,24 @@ module.exports = {
                       transform: "translateY(-8px)",
                       "animation-timing-function": "ease-in"
                   }
+              },
+              "fade-in-fwd": {
+                "0%": {
+                    transform: "translateZ(-80px)",
+                    opacity: "0"
+                },
+                to: {
+                    transform: "translateZ(0)",
+                    opacity: "1"
+                }
               }
-          }
+          },
       }
   },
 
   plugins: [require("daisyui")],
+  
   daisyui: {
     themes: ["light", "dark", "night", "garden", "dim", "dracula"],
-  },
+  }
 }
