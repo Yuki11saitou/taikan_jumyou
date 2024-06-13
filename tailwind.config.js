@@ -11,7 +11,7 @@ module.exports = {
   theme: {
       extend: {
           fontFamily: {
-            'body-jp': ['Kiwi Maru', 'serif'],
+            'body-jp': ['Noto Serif JP', 'serif'],
             'body-en': ['Shrikhand', 'serif']
           },
           // 画像、テキストのアニメーション追加
