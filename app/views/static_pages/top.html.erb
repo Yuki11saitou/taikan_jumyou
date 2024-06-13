@@ -17,7 +17,7 @@
     <%= form_with url: result_path, method: :post, local: true do |form| %>
       <div class="mb-10 text-center">
         <label for="current_age" class="block text-lg text-orange-300">あなたの年齢を教えてください。</label>
-        <%= form.select :current_age, options_for_select((1..100).to_a), { prompt: "年齢を選択" }, class: "form-select text-orange-100 py-1 px-4" %>
+        <%= form.select :current_age, options_for_select((1..120).to_a), { prompt: "年齢を選択" }, class: "form-select text-orange-100 py-1 px-4" %>
       </div>
       <div class="mb-10 text-center">
         <label for="expected_age" class="block text-lg text-orange-300">何歳まで生きると思いますか？</label>
