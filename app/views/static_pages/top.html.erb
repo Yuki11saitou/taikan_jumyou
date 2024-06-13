@@ -17,18 +17,18 @@
     <%= form_with url: result_path, method: :post, local: true do |form| %>
       <div class="mb-10 text-center">
         <label for="current_age" class="block text-lg text-orange-300">あなたの年齢を教えてください。</label>
-        <%= form.select :current_age, options_for_select((1..100).to_a), { prompt: "年齢を選択" }, class: "form-select text-orange-100" %>
+        <%= form.select :current_age, options_for_select((1..100).to_a), { prompt: "年齢を選択" }, class: "form-select text-orange-100 py-1 px-4" %>
       </div>
       <div class="mb-10 text-center">
         <label for="expected_age" class="block text-lg text-orange-300">何歳まで生きると思いますか？</label>
-        <%= form.select :final_age, options_for_select((1..120).to_a), { prompt: "予想寿命を選択" }, class: "form-select text-orange-100" %>
+        <%= form.select :final_age, options_for_select((1..120).to_a), { prompt: "予想寿命を選択" }, class: "form-select text-orange-100 py-1 px-4" %>
         <div class="text-base sm:text-sm text-center mb-10 sm:mb-20 mt-6">
           日本での平均寿命は 男性:81歳、女性:87歳です。<br>
           引用元:2023年度厚生労働省調査
         </div>
       </div>
       <div class="mb-10 text-center">
-        <%= form.submit "計測する", class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+        <%= form.submit "計測する", class: "bg-violet-700 hover:bg-violet-900 text-white font-bold py-2 px-4 rounded" %>
       </div>
     <% end %>
   </div>
