@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .twitter a {
-    color: #00acee;
+    color: #0cb4ec;
+    font-weight: bold;
   }
   
   .twitter a:hover {
