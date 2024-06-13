@@ -11,3 +11,20 @@
     transition: opacity 0.3s ease;
     text-decoration: none;
   }
+
+  /* もちさんのところから */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@layer components {
+    .kiwi-maru-regular {
+        font-family: "Kiwi Maru", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .shrikhand-regular {
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
