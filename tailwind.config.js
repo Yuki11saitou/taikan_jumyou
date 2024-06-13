@@ -64,6 +64,6 @@ module.exports = {
   plugins: [require("daisyui")],
   
   daisyui: {
-    themes: ["light", "dark", "night", "garden", "dim", "dracula"],
+    themes: ["light", "dark", "night", "garden", "dim", "dracula", "business"],
   }
 }

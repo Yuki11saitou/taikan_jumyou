@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme=dracula>
+<html data-theme=business>
   <head>
     <%# googleフォント読み込み %>
     <style>
@@ -20,9 +20,11 @@
   </head>
 
   <body>
-    <%= render 'shared/header' %>
-    <%= render 'shared/flash' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div class="font-body-jp">
+      <%= render 'shared/header' %>
+      <%= render 'shared/flash' %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
   </body>
 </html>
