@@ -1,14 +1,13 @@
-
-<div class="text-xl md:text-3xl flex flex-col justify-center min-h-screen container mx-auto pl-20 p-5">
-   <div class="animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
-   <div class="text-base sm:text-sm mb-6 sm:mb-10 mt-3">※あなたの現在の体感時間を元に算出</div>
-   <div class="animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
-
-
-   <div>寿命：あと <%= @lifespan %> 年</div>
-   <div>人生の経過率：<%= @lifespan_progress_rate %> %</div>
-
-
+<div class="flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-md w-full">
+        <div class="text-left">
+            <div class="text-yellow-500 text-2xl animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
+            <div class="text-2xl text-base sm:text-sm mb-3 sm:mb-2 mt-1">※あなたの現在の体感時間を元に算出</div>
+            <div class="text-yellow-500 text-2xl animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
+            <div class="text-2xl">寿命：あと <%= @lifespan %> 年</div>
+            <div class="text-2xl">人生の経過率：<%= @lifespan_progress_rate %> %</div>
+        </div>
+    </div>
 </div>
 
 <div class="twitter">
