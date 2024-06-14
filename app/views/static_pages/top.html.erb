@@ -16,6 +16,7 @@
         と思って頂けたら嬉しいです。<br><br>
         あなたの体感寿命、測ります。<br>
     </div>
+
     <%= form_with url: result_path, method: :post, local: true do |form| %>
       <div class="mb-10 text-center">
         <label for="current_age" class="block text-lg text-orange-300 mb-2">あなたの年齢を教えてください。</label>
@@ -30,9 +31,10 @@
         </div>
       </div>
       <div class="mb-10 text-center">
-        <%= form.submit "計測する", class: "bg-violet-700 hover:bg-violet-900 text-white font-bold py-2 px-4 rounded" %>
+        <button class="btn btn-outline btn-info mb-10 rounded">
+          <%= form.submit "計測する", class:"font-bold text-center" %>
+        </button>
       </div>
     <% end %>
   </div>
 </div>
-
