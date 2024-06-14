@@ -9,7 +9,7 @@ class ResultsController < ApplicationController
       return
     elsif current_age > final_age
       # 現在の年齢が最後の年齢よりも大きい場合はトップページにリダイレクト
-      redirect_to root_path, notice: "現在の年齢が最後の年齢よりも大きいです"
+      redirect_to root_path, notice: "現在の年齢が予想寿命よりも大きいです"
       return
     end
 
