@@ -1,9 +1,15 @@
-<div>　　寿命：あと <%= @lifespan %> 年</div>
-<div class="animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
-<h1>※あなたの現在の体感時間を元に算出</h1>
 
-<div>人生の　　経過率：<%= @lifespan_progress_rate %> %</div>
-<div class="animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
+<div class="text-xl md:text-3xl flex flex-col justify-center min-h-screen container mx-auto pl-20 p-5">
+   <div class="animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
+   <div class="text-base sm:text-sm mb-6 sm:mb-10 mt-3">※あなたの現在の体感時間を元に算出</div>
+   <div class="animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
+
+
+   <div>寿命：あと <%= @lifespan %> 年</div>
+   <div>人生の経過率：<%= @lifespan_progress_rate %> %</div>
+
+
+</div>
 
 <div class="twitter">
    <%= link_to "https://twitter.com/intent/tweet?url=#{request.base_url}&text=#{ERB::Util.url_encode("【体感寿命、測ります】\n\nあなたの体感寿命は残り「#{@perceived_lifespan}年」\n人生の体感経過率は「#{@perceived_lifespan_progress_rate}%」です\n\n\n#体感寿命測ります\n\nサイトはこちら\n")}", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>

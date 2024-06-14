@@ -17,7 +17,10 @@ module.exports = {
           // 画像、テキストのアニメーション追加
           animation: {
               "bounce-in-top": "bounce-in-top 1.1s ease   both",
-              "fade-in-fwd": "fade-in-fwd 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both"
+              "fade-in-fwd": "fade-in-fwd 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
+              "slide-in-left": "slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+              "slide-in-right": "slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both"
+
           },
           keyframes: {
               "bounce-in-top": {
@@ -54,6 +57,26 @@ module.exports = {
                 },
                 to: {
                     transform: "translateZ(0)",
+                    opacity: "1"
+                }
+              },
+              "slide-in-left": {
+                "0%": {
+                    transform: "translateX(-1000px)",
+                    opacity: "0"
+                },
+                to: {
+                    transform: "translateX(0)",
+                    opacity: "1"
+                }
+              },
+              "slide-in-right": {
+                "0%": {
+                    transform: "translateX(1000px)",
+                    opacity: "0"
+                },
+                to: {
+                    transform: "translateX(0)",
                     opacity: "1"
                 }
               }
