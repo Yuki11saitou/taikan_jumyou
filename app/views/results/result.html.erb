@@ -4,8 +4,8 @@
          <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-md w-full">
             <div class="text-left">
                   <div class="text-xl mb-3 underline underline-offset-4">通常の時間計算</div>
-                  <div class="text-2xl text-white mb-1">寿命：あと <%= @lifespan %> 年</div>
-                  <div class="text-2xl text-white mb-1">人生の経過率：<%= @lifespan_progress_rate %> %</div>
+                  <div class="text-xl text-white mb-1">寿命：あと <%= @lifespan %> 年</div>
+                  <div class="text-xl text-white mb-1">人生の経過率：<%= @lifespan_progress_rate %> %</div>
             </div>
          </div>
       </div>
@@ -17,9 +17,9 @@
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center max-w-md w-full">
                <div class="text-left">
                   <div class="text-xl mb-3 underline underline-offset-4">現在の体感時間を元に算出</div>
-                  <div class="text-yellow-500 text-2xl mb-1 animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
+                  <div class="text-yellow-500 text-xl mb-1 animate-fade-in-fwd">体感寿命：あと <%= @perceived_lifespan %> 年</div>
 
-                  <div class="text-yellow-500 text-2xl mb-1 animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
+                  <div class="text-yellow-500 text-xl mb-1 animate-fade-in-fwd">人生の体感経過率：<%= @perceived_lifespan_progress_rate %> %</div>
             </div>
          </div>
       </div>
@@ -39,7 +39,7 @@
 
 
 
-   <button class="btn btn-outline btn-info" onclick="my_modal_5.showModal()">Xでシェアする</button>
+   <button class="btn btn-outline btn-info rounded-md" onclick="my_modal_5.showModal()">Xでシェアする</button>
    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box">
          <h3 class="font-bold text-lg">注意点</h3>
