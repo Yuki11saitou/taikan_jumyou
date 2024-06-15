@@ -4,6 +4,23 @@
     <%# googleフォント読み込み %>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+      /* 円グラフ用CSS設定 */
+      .pie {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: conic-gradient(
+          #af0082 0%,
+          #af0082 var(--percentage),
+          #192f60 var(--percentage),
+          #192f60 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+      }
     </style>
 
     <% if Rails.env.production? %>
