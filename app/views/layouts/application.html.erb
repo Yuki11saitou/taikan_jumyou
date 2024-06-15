@@ -23,6 +23,9 @@
       }
     </style>
 
+    <%# ファビコン導入 %>
+    <%= favicon_link_tag image_path('time_woman.png'), type: 'image/png' %>
+
     <% if Rails.env.production? %>
       <%= render 'layouts/google_analytics' %>
     <% end %>
