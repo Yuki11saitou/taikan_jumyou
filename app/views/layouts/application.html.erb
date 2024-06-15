@@ -32,12 +32,6 @@
 
     <title>体感寿命、測ります</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
-
     <%# XのOGP表示 %>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@tripletsuper11" />
@@ -45,6 +39,11 @@
     <meta name="twitter:title" content="体感寿命、測ります" />
     <meta name="twitter:description" content="あなたの年齢から、体感寿命を計測します。" />
     <meta name="twitter:image" content="<%= asset_url('ogp.png') %>" />
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
 
   </head>
 
