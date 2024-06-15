@@ -9,13 +9,16 @@
           <%= link_to "なぜ計算できるのか？", underly_rule_path, class: "text-sm" %>
         </li>
         <li>
-          <a>Parent</a>
+          <a>計算解説</a>
           <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li>
+              <%= link_to "人生の体感経過率について", progress_rate_path, class: "text-sm" %>
+            </li>
+            <li><a>Submenu 2</a>
+            
+            </li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
       </ul>
     </div>
     <%= link_to "体感寿命、測ります", root_path, class: "btn btn-ghost text-xl" %>
@@ -35,7 +38,6 @@
           </ul>
         </details>
       </li>
-      <li><a>Item 3</a></li>
     </ul>
   </div>
   <div class="navbar-end text-sm">
