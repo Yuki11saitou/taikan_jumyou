@@ -9,11 +9,7 @@ module ApplicationHelper
   end
 
   def full_url(path)
-    domain = if Rails.env.development?
-               'http://0.0.0.0:3000'
-             else
-               'https://taikan-jumyou.onrender.com'
-             end
+    domain = 'https://taikan-jumyou.onrender.com'
     "#{domain}#{path}"
   end
 end
