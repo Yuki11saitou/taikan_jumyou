@@ -38,7 +38,8 @@
     <meta name="twitter:domain" content="taikan-jumyou.onrender.com" />
     <meta name="twitter:title" content="体感寿命、測ります" />
     <meta name="twitter:description" content="あなたの年齢から、体感寿命を計測します。" />
-    <meta name="twitter:image" content="<%= asset_url('ogp.png') %>" />
+
+    <meta property="og:image" content="<%= content_for?(:image_url) ? yield(:image_url) : full_url('/assets/images/ogp.png') %>" />
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

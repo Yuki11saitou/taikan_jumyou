@@ -7,4 +7,13 @@ module ApplicationHelper
     else "bg-gray-500"
     end
   end
+
+  def full_url(path)
+    domain = if Rails.env.development?
+               'http://0.0.0.0:3000'
+             else
+               'https://taikan-jumyou.onrender.com'
+             end
+    "#{domain}#{path}"
+  end
 end
