@@ -7,9 +7,4 @@ module ApplicationHelper
     else "bg-gray-500"
     end
   end
-
-  def full_url(path)
-    domain = 'https://taikan-jumyou.onrender.com'
-    "#{domain}#{path}"
-  end
 end
