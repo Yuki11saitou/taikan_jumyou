@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'result', to: 'results#result'
   get 'underly_rule', to: 'underly_rule#underly_rule'
   get 'progress_rate', to: 'progress_rate#progress_rate'
+  get 'lifespan', to: 'lifespan#lifespan'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
