@@ -19,8 +19,8 @@ module.exports = {
               "bounce-in-top": "bounce-in-top 1.1s ease   both",
               "fade-in-fwd": "fade-in-fwd 1.9s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
               "slide-in-left": "slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
-              "slide-in-right": "slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both"
-
+              "slide-in-right": "slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+              "slide-in-elliptic-top-bck": "slide-in-elliptic-top-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both"
           },
           keyframes: {
               "bounce-in-top": {
@@ -79,7 +79,19 @@ module.exports = {
                     transform: "translateX(0)",
                     opacity: "1"
                 }
-              }
+              },
+              "slide-in-elliptic-top-bck": {
+                "0%": {
+                    transform: "translateY(-600px) rotateX(30deg) scale(6.5)",
+                    "transform-origin": "50% 200%",
+                    opacity: "0"
+                },
+                to: {
+                    transform: "translateY(0) rotateX(0) scale(1)",
+                    "transform-origin": "50% -500px",
+                    opacity: "1"
+                }
+            }
           },
       }
   },
